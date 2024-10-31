@@ -1,0 +1,71 @@
+body {
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    color: black; 
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#yesButton, #noButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;border: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; }
+
+#yesButton {
+    background-color: green;
+    color: white; 
+}
+
+#noButton {
+    background-color: red; 
+    color: white; 
+}
+
+#yesButton:hover {
+    background-color: darkgreen; }
+
+#noButton:hover {
+    background-color: darkred; }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#responseImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    z-index: -1; /* To keep the image behind other elements */
+}
+#responseText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 48px; /* Adjust font size as needed */
+    display: none; /* Initially hidden */
+    z-index: 1; /* Display above the image */
+    color: black;
+}
+#questionText {
+    color: black; /* Set question text color to black */
+}
